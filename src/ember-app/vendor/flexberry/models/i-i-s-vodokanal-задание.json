@@ -1,0 +1,120 @@
+﻿{
+  "name": "IISVodokanalЗадание",
+  "modelName": "i-i-s-vodokanal-задание",
+  "className": "Задание",
+  "nameSpace": "IIS.Vodokanal",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудник",
+      "relatedTo": "i-i-s-vodokanal-сотрудник",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "пункт",
+      "relatedTo": "i-i-s-vodokanal-пункт",
+      "inverse": "задание"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ЗаданиеE",
+      "modelName": "i-i-s-vodokanal-задание",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Фамилия",
+          "lookupValueField": "фамилия",
+          "relationName": "Сотрудник",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "Фамилия",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Сотрудник",
+          "name": "сотрудник",
+          "relatedTo": "i-i-s-vodokanal-сотрудник",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ПунктE",
+          "caption": "Пункт",
+          "name": "пункт",
+          "relatedTo": "i-i-s-vodokanal-пункт",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ЗаданиеL",
+      "modelName": "i-i-s-vodokanal-задание",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудник",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "Фамилия",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Фамилия",
+          "name": "сотрудник",
+          "relatedTo": "i-i-s-vodokanal-сотрудник",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

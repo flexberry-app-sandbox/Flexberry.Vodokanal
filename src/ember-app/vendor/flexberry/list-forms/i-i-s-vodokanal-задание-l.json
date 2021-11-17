@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-vodokanal-задание-e",
+  "editForm": "i-i-s-vodokanal-задание-e",
+  "external": false,
+  "caption": "Задание",
+  "name": "IISVodokanalЗаданиеL",
+  "className": "ЗаданиеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-vodokanal-задание",
+      "modelProjection": "ЗаданиеL"
+    }
+  ]
+}

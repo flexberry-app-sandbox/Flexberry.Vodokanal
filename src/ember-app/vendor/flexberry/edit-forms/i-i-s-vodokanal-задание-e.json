@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудник",
+      "projection": "СотрудникL",
+      "detailModelName": null
+    },
+    {
+      "master": "работа",
+      "displayAttributeName": "план",
+      "required": true,
+      "relationName": "Пункт.Работа",
+      "projection": "РаботаL",
+      "detailModelName": "i-i-s-vodokanal-пункт"
+    }
+  ],
+  "external": false,
+  "caption": "Задание",
+  "name": "IISVodokanalЗаданиеE",
+  "className": "ЗаданиеE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-vodokanal-задание",
+      "modelProjection": "ЗаданиеE"
+    }
+  ]
+}

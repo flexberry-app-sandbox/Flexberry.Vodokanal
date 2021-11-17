@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Заявка",
+  "name": "IISVodokanalЗаявкаE",
+  "className": "ЗаявкаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-vodokanal-заявка",
+      "modelProjection": "ЗаявкаE"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Вид работы",
+  "name": "IISVodokanalВидРаботыE",
+  "className": "ВидРаботыE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-vodokanal-вид-работы",
+      "modelProjection": "ВидРаботыE"
+    }
+  ]
+}

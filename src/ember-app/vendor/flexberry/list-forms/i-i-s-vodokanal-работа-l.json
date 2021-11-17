@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-vodokanal-работа-e",
+  "editForm": "i-i-s-vodokanal-работа-e",
+  "external": false,
+  "caption": "Работа",
+  "name": "IISVodokanalРаботаL",
+  "className": "РаботаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-vodokanal-работа",
+      "modelProjection": "РаботаL"
+    }
+  ]
+}

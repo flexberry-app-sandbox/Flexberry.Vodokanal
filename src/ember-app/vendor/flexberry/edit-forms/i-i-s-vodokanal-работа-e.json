@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Заявка",
+      "projection": "ЗаявкаL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ВидРаботы",
+      "projection": "ВидРаботыL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Работа",
+  "name": "IISVodokanalРаботаE",
+  "className": "РаботаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-vodokanal-работа",
+      "modelProjection": "РаботаE"
+    }
+  ]
+}

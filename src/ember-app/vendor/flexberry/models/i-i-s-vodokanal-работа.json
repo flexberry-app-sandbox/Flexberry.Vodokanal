@@ -1,0 +1,176 @@
+﻿{
+  "name": "IISVodokanalРабота",
+  "modelName": "i-i-s-vodokanal-работа",
+  "className": "Работа",
+  "nameSpace": "IIS.Vodokanal",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "план",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "факт",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "заявка",
+      "relatedTo": "i-i-s-vodokanal-заявка",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "видРаботы",
+      "relatedTo": "i-i-s-vodokanal-вид-работы",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "РаботаE",
+      "modelName": "i-i-s-vodokanal-работа",
+      "attrs": [
+        {
+          "name": "план",
+          "caption": "План",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "факт",
+          "caption": "Факт",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Адрес",
+          "lookupValueField": "адрес",
+          "relationName": "Заявка",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "адрес",
+              "caption": "Адрес",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Заявка",
+          "name": "заявка",
+          "relatedTo": "i-i-s-vodokanal-заявка",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Название",
+          "lookupValueField": "название",
+          "relationName": "ВидРаботы",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "название",
+              "caption": "Название",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Вид работы",
+          "name": "видРаботы",
+          "relatedTo": "i-i-s-vodokanal-вид-работы",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "РаботаL",
+      "modelName": "i-i-s-vodokanal-работа",
+      "attrs": [
+        {
+          "name": "план",
+          "caption": "План",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "факт",
+          "caption": "Факт",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Заявка",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "адрес",
+              "caption": "Адрес",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Адрес",
+          "name": "заявка",
+          "relatedTo": "i-i-s-vodokanal-заявка",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ВидРаботы",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "название",
+              "caption": "Название",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Название",
+          "name": "видРаботы",
+          "relatedTo": "i-i-s-vodokanal-вид-работы",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

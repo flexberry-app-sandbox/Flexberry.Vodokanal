@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vodokanal.ODataBackend", "ODataBackend/Vodokanal.ODataBackend.csproj", "{3DB5C0A1-21EB-4F6C-9A4F-EF92057E6109}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vodokanal.Objects", "Objects/Vodokanal.Objects.csproj", "{7D76CB1E-C5D9-47DB-934A-F8370BF99600}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+Debug|Any CPU = Debug|Any CPU
+Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DB5C0A1-21EB-4F6C-9A4F-EF92057E6109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB5C0A1-21EB-4F6C-9A4F-EF92057E6109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB5C0A1-21EB-4F6C-9A4F-EF92057E6109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB5C0A1-21EB-4F6C-9A4F-EF92057E6109}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D76CB1E-C5D9-47DB-934A-F8370BF99600}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D76CB1E-C5D9-47DB-934A-F8370BF99600}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D76CB1E-C5D9-47DB-934A-F8370BF99600}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D76CB1E-C5D9-47DB-934A-F8370BF99600}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

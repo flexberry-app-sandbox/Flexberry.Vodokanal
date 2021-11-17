@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-vodokanal-вид-работы-e",
+  "editForm": "i-i-s-vodokanal-вид-работы-e",
+  "external": false,
+  "caption": "Вид работы",
+  "name": "IISVodokanalВидРаботыL",
+  "className": "ВидРаботыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-vodokanal-вид-работы",
+      "modelProjection": "ВидРаботыL"
+    }
+  ]
+}

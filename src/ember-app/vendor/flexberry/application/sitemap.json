@@ -1,0 +1,58 @@
+﻿{
+  "applicationCaption": "Vodokanal",
+  "applicationTitle": "Vodokanal",
+  "items": [
+    {
+      "link": null,
+      "menuName": "водоканал",
+      "caption": "Водоканал",
+      "title": "Водоканал",
+      "children": [
+        {
+          "link": "i-i-s-vodokanal-работа-l",
+          "menuName": null,
+          "caption": "Работа",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-vodokanal-задание-l",
+          "menuName": null,
+          "caption": "Задание",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-vodokanal-заявка-l",
+          "menuName": null,
+          "caption": "Заявка",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "справоники",
+      "caption": "Справоники",
+      "title": "Справоники",
+      "children": [
+        {
+          "link": "i-i-s-vodokanal-сотрудник-l",
+          "menuName": null,
+          "caption": "Сотрудник",
+          "title": "Сотрудник",
+          "children": null
+        },
+        {
+          "link": "i-i-s-vodokanal-вид-работы-l",
+          "menuName": null,
+          "caption": "Вид работы",
+          "title": "Вид работы",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

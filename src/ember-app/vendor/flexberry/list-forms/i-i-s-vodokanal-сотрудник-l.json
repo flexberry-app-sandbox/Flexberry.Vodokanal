@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-vodokanal-сотрудник-e",
+  "editForm": "i-i-s-vodokanal-сотрудник-e",
+  "external": false,
+  "caption": "Сотрудник",
+  "name": "IISVodokanalСотрудникL",
+  "className": "СотрудникL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-vodokanal-сотрудник",
+      "modelProjection": "СотрудникL"
+    }
+  ]
+}

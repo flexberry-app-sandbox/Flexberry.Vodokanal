@@ -1,0 +1,77 @@
+﻿{
+  "name": "IISVodokanalПункт",
+  "modelName": "i-i-s-vodokanal-пункт",
+  "className": "Пункт",
+  "nameSpace": "IIS.Vodokanal",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "готово",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "работа",
+      "relatedTo": "i-i-s-vodokanal-работа",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "задание",
+      "relatedTo": "i-i-s-vodokanal-задание",
+      "inverse": "пункт"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПунктE",
+      "modelName": "i-i-s-vodokanal-пункт",
+      "attrs": [
+        {
+          "name": "готово",
+          "caption": "Готово",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "План",
+          "lookupValueField": "план",
+          "relationName": "Работа",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "план",
+              "caption": "План",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Работа",
+          "name": "работа",
+          "relatedTo": "i-i-s-vodokanal-работа",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

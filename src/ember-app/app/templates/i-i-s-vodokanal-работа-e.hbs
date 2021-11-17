@@ -1,0 +1,83 @@
+<h3 class="ui header">{{t "forms.i-i-s-vodokanal-работа-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.план
+      class=(if (v-get validationModel "план" "isInvalid") "error")
+      label=(t "forms.i-i-s-vodokanal-работа-e.план-caption")
+      data-test-i-i-s-vodokanal-работа-e-план=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "план" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.факт
+      class=(if (v-get validationModel "факт" "isInvalid") "error")
+      label=(t "forms.i-i-s-vodokanal-работа-e.факт-caption")
+      data-test-i-i-s-vodokanal-работа-e-факт=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "факт" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-vodokanal-работа-e.заявка-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.заявка
+      displayAttributeName="адрес"
+      autocomplete=true
+      relationName="заявка"
+      projection="ЗаявкаL"
+      title=(t "forms.i-i-s-vodokanal-работа-e.заявка-caption")
+      readonly=readonly
+      componentName="заявкаLookup"
+      class=(if (v-get validationModel "заявка" "isInvalid") "error")
+      data-test-i-i-s-vodokanal-работа-e-заявка=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "заявка" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-vodokanal-работа-e.видРаботы-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.видРаботы
+      displayAttributeName="название"
+      autocomplete=true
+      relationName="видРаботы"
+      projection="ВидРаботыL"
+      title=(t "forms.i-i-s-vodokanal-работа-e.видРаботы-caption")
+      readonly=readonly
+      componentName="видРаботыLookup"
+      class=(if (v-get validationModel "видРаботы" "isInvalid") "error")
+      data-test-i-i-s-vodokanal-работа-e-видРаботы=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "видРаботы" "message")}}
+  </div>
+</form>

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-vodokanal-заявка-e",
+  "editForm": "i-i-s-vodokanal-заявка-e",
+  "external": false,
+  "caption": "Заявка",
+  "name": "IISVodokanalЗаявкаL",
+  "className": "ЗаявкаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-vodokanal-заявка",
+      "modelProjection": "ЗаявкаL"
+    }
+  ]
+}
